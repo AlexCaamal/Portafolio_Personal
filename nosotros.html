@@ -5,38 +5,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre Nosotros</title>
-
-
+    <title>Ingeniero en Sistemas</title>
 
     <!--  NORMALIZE https://necolas.github.io/normalize.css/-->
     <link rel="preload" href="css/normalize.css" as="style">
     <!--PARA LIGAR EL ARCHIVO EXTERNO  CSS EN TODAS LAS PAGINAS QUE SE USARAN-->
     <link rel="stylesheet" href="css/normalize.css">
-    <!-- Colocación de letras al documento-->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap" rel="stylesheet">
-
+    <!-- FORMA NO RECOMENDADA DE USAR CSS
+    <style>
+        h1{
+            text-align: center;
+            color: brown;
+            text-transform: uppercase;
+        }
+    </style> -->
     <link rel="preload" href="css/stylesNosotros.css" as="style">
+    <!--PARA LIGAR EL ARCHIVO EXTERNO  CSS EN TODAS LAS PAGINAS QUE SE USARAN-->
     <link rel="stylesheet" href="css/stylesNosotros.css">
+
+    
 
 </head>
 
 <body>
-    <header class="titulo contenedor">
-        <h1>NOSOTROS</h1>
-    </header>
-    <div class="imagen_uac contenedor">
-        <section >
+
+    <!-- INICIO DEL ENCABEZADO DEL SITIO-->
+    <div class="derecha contenedor">
+        <img class="dark-mode" src="imga/dark-mode.svg" alt="Icono dark">
+    <!-- INICIO DEL ENCABEZADO DEL SITIO-->
+    <header>
+        
+        <h1 class="titulo derecha">Nardin Alexander Chuc Caamal <span class="derecha"> Estudiante de ISC</span></h1>
+
+    </header> <!-- FIN... DEL ENCABEZADO DEL SITIO-->
+</div>
+
+    <!--INICIO DEL ÁREA DE NAVEGACIÓN O MENUS-->
+    <div class="nav-bg contenedor">
+        <div class="mobile-menu">
+            <img class= "img_hambur" src="imga/barras.svg" alt="icono Menu Hamburquesa">
+        
+        </div>
+        <nav class="nav-principal">
+            <a href="index.html">Inicio</a>
+            <a href="clientes.html">Clientes</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </div>
+    <!--<img src="img/banner_freelancer2.jpg" alt="Servicios"> -->
+    <br><br><br><br>
+    <section class="imagen_uac contenedor sombra">
+            
         <p>
             <a class="boton" href="https://www.uacam.mx"> Visitar Página Web</a>
         </p>
     </section>
-
-    </div>
-    
-
+    <!-- para buscar iconos svg o vectores lo soportan todos los navegadores se usa https://tablericons.com/-->
+    <br><br><br>
     <main class="contenedor sombra">
         <div class="imagen">
             <section class="definicion_nosotros">
@@ -54,16 +83,21 @@
                 - Mecatrónica.<br><br><br>
                 Las Ingenierias es el estudio de la creacion e ingenio, para poder innovar, crear o mejorar ciertas tecnologias que ya existen.
                 <br><br>
-                La carrera que nosotros estamos cursando es la de Sistemas Computacionales, en donde podemos desarrollar una lógica para la Programación para la crear nuevos sistemas o softwares.
+                La carrera que nosotros estamos cursando es la de Sistemas Computacionales, en donde podemos desarrollar una lógica para la Programación para crear nuevos sistemas o softwares.
                 </p>  
             </section>
         </div>
     </main>
     <footer>
-        <div class="contenedor footer">
-            <a href="index.html">Contactar</a>
-        </div>
-      </footer>
+        <section class="contenedor">
+            <h1>REDES SOCIALES</h1>
+           
+                <a href="https://www.facebook.com/nardin.chuc" class="social"><img src="imga/facebook.png" alt=""> </a>
+                <a href="https://www.youtube.com/channel/UCwPWtKKk-NQV2XolopkzIXw" class="social"><img src="imga/youtube.png" alt=""> </a>
+            
+        </section>
+    </footer>
+    <script src = "js/app.js"> </script>
 </body>
 
 </html>

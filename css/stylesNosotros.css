@@ -5,6 +5,9 @@
     --azul: #00f;
     --verde: #0f0;
     --rojo: #f00;
+    --gris: #a8a6a1;
+    --secundario: #abc;
+    --primario: #ffc107;
 }
 
 /* CSS DE HTML*/
@@ -13,38 +16,39 @@ html {
     font-size: 80%;
     box-sizing: border-box;
     scroll-snap-type: y mandatory;
-    background-image: linear-gradient(to top, var(--primario) 0%, var(--blanco) 80%);
+    background-image: linear-gradient(to top, rgba(29, 235, 224, 0.2) 0%, var(--blanco) 80%);
 
 }
 
 /* CSS DE BODY */
 
 body {
-    font-family: 'Comic Neue', cursive;
 
+    font-size: 22px; /** 1 rem= 10px**/
+    font-family: 'Comic Neue', cursive;
 }
 
-*,
-*:before,
-*:after {
+*,*:before,*:after {
     box-sizing: inherit;
 }
 
 .titulo{
     text-align: center;
-    background-color: #00f;
-    color: var(--blanco);
-    font-size: 2.8rem;
+}
+
+.titulo span{
+    font-size: 2rem;
+    color: var(--secundario);
 }
 
 /* CSS del main e imagen*/
 
-.contenedor {
-    max-width: 130rem;
+.contenedor{
+    max-width: 80rem;
     margin: 0 auto;
 }
 
-.sombra {
+.sombra{
     -webkit-box-shadow: 7px 2px 91px 29px rgba(71,10,201,1);
     -moz-box-shadow: 7px 2px 91px 29px rgba(71,10,201,1);
     box-shadow: 7px 2px 91px 29px rgba(71,10,201,1);
@@ -53,7 +57,7 @@ body {
 }
 
 .imagen{
-    background-image: url(../img/facultad_inge.png);
+    background-image: url(../imga/facultad_inge.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 1700px;
@@ -109,7 +113,7 @@ body {
 }
 
 .imagen_uac{
-    background-image: url(../img/logo_uac.png);
+    background-image: url(../imga/logo_uac.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 450px;
@@ -122,13 +126,123 @@ body {
 }
 
 .boton{
- text-decoration: none;
- font-size: 2.2rem;
- background-color: rgba(10, 159, 245, 0.2);
- width: 1000px;
- border-radius: 1rem;
+    text-decoration: none;
+    font-size: 2.2rem;
+    background-color: rgba(10, 159, 245, 0.2);
+    width: 1000px;
+    border-radius: 1rem;
 }
 
 .boton:hover{
     color:var(--rojo)
 }
+.nav-principal a{
+    text-align: center;
+    color: var(--blanco);
+    text-decoration:none;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1.5rem;
+}
+
+.nav-principal a:hover{
+    background-color: var(--primario);
+    color: #000;
+    
+}
+
+.nav-principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+/*****  Fin de Barra de Navegacion   **/
+@media(min-width: 780px){
+    .nav-principal{
+        flex-direction: row;
+    }
+}
+
+.nav-bg{
+    background-color: var(--gris);
+}
+.dark-modo{
+    background-color: #000;
+}
+.dark-modo img{
+    filter: invert(100%);
+}
+.dark-modo p{
+    color: #ffc107;
+}
+.dark-modo h1, h3{
+    color: var(--blanco);
+}
+.dark-modo h2{
+    color: var(--primario);
+}
+.dark-modo main{
+    background-color: #000;
+}
+
+
+.derecha{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1rem;
+}
+.dark-mode{
+    width: 3rem;
+}
+.dark-mode:hover{
+    cursor: pointer;
+}
+.mobile-menu{
+    text-align: center;
+}
+.mobile-menu img{
+width: 5rem;
+}
+.mobile-menu img:hover{
+    cursor: pointer;
+}
+@media (max-width:780px){
+    .nav-principal{
+        display: none;
+    }
+    .mobile-menu{
+        text-align: center;
+    }
+
+    .mobile-menu img{
+        width: 5rem;
+        height: 5rem;
+    }
+}
+
+@media(min-width:780px){
+
+    .nav-principal{
+        flex-direction: row;
+    }
+
+    .mobile-menu{
+        display: none;
+    }
+}
+@media(max-width: 780px){
+    .mostrar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media(min-width:780px){
+    .nav-principal{
+        flex-direction: row;
+    }
+}
+

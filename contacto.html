@@ -32,23 +32,31 @@
 </head>
 
 <body>
-
+    
+    <!-- INICIO DEL ENCABEZADO DEL SITIO-->
+    <div class="derecha contenedor">
+        <img class="dark-mode" src="imga/dark-mode.svg" alt="Icono dark">
     <!-- INICIO DEL ENCABEZADO DEL SITIO-->
     <header>
-        <h1 class="titulo">Nardin Alexander Chuc Caamal <span> Estudiante de ISC</span></h1>
+        <h1 class="titulo derecha">Nardin Alexander Chuc Caamal <span class="derecha"> Estudiante de ISC</span></h1>
 
     </header> <!-- FIN... DEL ENCABEZADO DEL SITIO-->
+    </div>
 
     <!--INICIO DEL ÁREA DE NAVEGACIÓN O MENUS-->
     <div class="nav-bg contenedor">
+        <div class="mobile-menu">
+            <img class= "img_hambur" src="imga/barras.svg" alt="icono Menu Hamburquesa">
+        
+        </div>
         <nav class="nav-principal">
-            <a href="#">Inicio</a>
+            <a href="index.html">Inicio</a>
             <a href="nosotros.html">Nosotros</a>
-            <a href="#">Clientes</a>
+            <a href="clientes.html">Clientes</a>
         </nav>
         <!--FIN... DEL ÁREA DE NAVEGACIÓN O MENUS-->
     </div>
-    <!--<img src="img/banner_freelancer2.jpg" alt="Servicios"> -->
+    <br><br>
 
 
     <!-- para buscar iconos svg o vectores lo soportan todos los navegadores se usa https://tablericons.com/-->
@@ -64,7 +72,7 @@
 
             <h2>Contacto</h2>
 
-            <form class="formulario">
+            <form action= "php/accesobd.php" method ="POST" class="formulario">
                 <fieldset>
                     <legend>Llena todos los campos</legend>
                     <div class="contenedor-campos">
@@ -79,27 +87,35 @@
                         </div>
                         <div class="campo">
                             <label for="">Correo</label>
-                            <input class="input-campo" type="email" placeholder="Tu E-mail" id="txtCorreo" name="email">
+                            <input class="input-campo" type="email" placeholder="Tu E-mail"  name="email">
                         </div>
                         <div class="campo">
                             <label for="">Mensaje</label>
-                            <textarea></textarea>
+                            <textarea name="mensaje"></textarea>
                         </div>
                     </div>
                     <div>
-                        <input type="submit" value="Enviar" class="Boton width-sm-100" name="mensaje">
+                       <!--<input type="submit" value="Enviar" class="Boton width-sm-100" name="mensaje">*/--->
+                        <button type="submit" name="enviar" class="Boton width-sm-100">Enviar</button>
                     </div>
                 </fieldset>
             </form>
 
         </section> <!-- FIN... DEL FORMULARIO-->
     </main>
+    <br>
     <footer>
 
-        <p>Todos los derechos reservados &copy; 2022, Nicolas</p>
-        <p>Uso Eduacativo</p>
+        <section class="contenedor sombra">
+            <h1>REDES SOCIALES</h1>
+           
+                <a href="https://www.facebook.com/nardin.chuc" class="social"><img src="imga/facebook.png" alt=""> </a>
+                <a href="https://www.youtube.com/channel/UCwPWtKKk-NQV2XolopkzIXw" class="social"><img src="imga/youtube.png" alt=""> </a>
+            
+        </section>
 
     </footer>
+    <script src = "js/app.js"> </script>
 </body>
 
 </html>
