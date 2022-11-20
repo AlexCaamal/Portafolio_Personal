@@ -1,0 +1,391 @@
+:root{
+    --blanco: #fff;
+    --secundario: #abc;
+    --primario: #ffc107;
+    --gris: #a8a6a1;
+    --grisclaro: #cfcfcf;
+    --rojo: #f00;
+}
+html{
+    font-size: 80%;
+    box-sizing: border-box;
+    scroll-snap-type: y mandatory;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+/********** Estilo del body ********/
+body{
+
+    font-size: 22px; /** 1 rem= 10px**/
+    font-family: 'Comic Neue', cursive;
+}
+/********** estilo titulo ********/
+.titulo { 
+    text-align: center;
+    
+}
+.titulo span{
+    font-size: 2rem;
+    color: var(--rojo);
+}
+
+/********** nav barra de navegacion ********/
+
+.nav-bg{
+    background-color: var(--gris);
+}
+
+.contenido-imagen p{
+    color: white;
+}
+
+.nav-principal a{
+    text-align: center;
+    color: var(--blanco);
+    text-decoration:none;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1.5rem;
+}
+
+.nav-principal a:hover{
+    background-color: var(--primario);
+    color: #000;
+    
+}
+
+.nav-principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+/*****  Fin de Barra de Navegacion   **/
+@media(min-width: 780px){
+    .nav-principal{
+        flex-direction: row;
+    }
+
+}
+@media(min-width: 780px){
+    .imagen_logoJava{
+        width: 0 auto;
+    }
+    
+}
+
+
+.contenido-imagen{
+    position: absolute;
+
+    background-color: rgba(123, 10, 50, 0.5);
+    background-color: rgba(100 , 42, 42, 0.5);
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor{
+    max-width: 80rem;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem;
+}
+/*****  Boton de contactar   ****/
+
+
+
+.servicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.servicio p{
+    padding-left: 1rem;
+    padding-right: 1.5rem;
+    font-size: 2.8rem;
+}
+.servicio .iconos{
+    height: 9rem;
+    width: 9rem;
+    background-color: var(--gris);
+    border-radius: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.parrafo-footer{
+    text-align: center;
+}
+.servicio h3{
+    color: var(--rojo);
+}
+
+.servicio p{
+    line-height: 2;
+}
+.sombrajava{
+    -webkit-box-shadow: 11px 10px 67px 35px rgba(255,0,64,1);
+-moz-box-shadow: 11px 10px 67px 35px rgba(255,0,64,1);
+box-shadow: 11px 10px 67px 35px rgba(255,0,64,1);
+}
+.sombraClientes{
+    -webkit-box-shadow: 11px 10px 67px 42px rgba(255,111,0,0.89);
+    -moz-box-shadow: 11px 10px 67px 42px rgba(255,111,0,0.89);
+    box-shadow: 11px 10px 67px 42px rgba(255,111,0,0.89);
+}
+
+.sombra{
+    -webkit-box-shadow: 11px 10px 67px 42px rgba(0,136,255,1);
+    -moz-box-shadow: 11px 10px 67px 42px rgba(0,136,255,1);
+    box-shadow: 11px 10px 67px 42px rgba(0,136,255,1);
+
+
+
+    padding: 2rem;
+
+    border-radius: 1rem;
+}
+
+
+/***** texto de sql******/
+/* imagen de fondo*/
+.imagen_login{
+    background-image: url(../imga/slq_server.png);
+}
+.imagen{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    background-position: top;
+    position: relative;
+    margin-bottom: 0.5rem;
+}
+.cuerpoBD{
+    background-image: linear-gradient(to top, rgba(0,136,255,.2) 100%, var(--blanco) 20%);
+}
+.cuerpoJava{
+    background-image: linear-gradient(to top, rgba(255,0,64,.2) 100%, var(--blanco) 20%);
+}
+.cuerpoExcel{
+    background-image: linear-gradient(to top, rgba(89,0,255,.2) 100%, var(--blanco) 20%);
+}
+.texto_sql{
+    color: #fff;
+    position: absolute;
+    bottom: 50px; right: 100px;
+    font-size: 3rem;
+    background-color: var(--rojo);
+}
+.imagen_codigo{
+    background-image: url(../imga/sql_server_codigo.png);
+}
+.imagen_logo{
+    background-image: url(../imga/logo_sql.jpg);
+    height:  700px;
+}
+.txt_codigo{
+    position: relative;
+    top: 650px; left: 10px;
+    width:600px;
+}
+
+.imagen_relacion{
+    background-image: url(../imga/relacion_sql.png);
+}
+.opinion{
+    text-align: justify;
+    font-size: 2.8rem;
+}
+.opinion h3{
+    color: rgb(255, 94, 0);
+}
+
+/* CSS Para ServicioJava*/
+
+.imagen_logoJava{
+    background-image: url(../imga/logo_java.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+a:hover{
+    color:#f00;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+.imagen_ej1_java{
+    background-image: url(../imga/ej1_java.png);
+    background-position: left;
+}
+.imagen_net{
+    background-image: url(../imga/ej2_java.png);
+}
+
+
+/****** CSS para ServicioExcel *****/
+.imagen_logoExcel{
+    background-image: url(../imga/logo_excel.jpg);
+    position: relative;
+    bottom: 30px; left: 650px;
+    width: 800px;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.imagen_func{
+    background-image: url(../imga/funciones_excel.jpg);
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.dos_imagens{
+    height: 700px;
+    position: relative;
+}
+.logo_excelPrin{
+    background-image: url(../imga/banner_excel.jpg);
+    height: 600px;
+    background-position: bottom;
+}
+.imagen_eje1{
+    background-image: url(../imga/eje1_excel.png);
+}
+.ofice_excel{
+    background-image: url(../imga/Office2019.jpg);
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.sombraexcel{
+    -webkit-box-shadow: 11px 10px 67px 50px rgba(89,0,255,1);
+    -moz-box-shadow: 11px 10px 67px 50px rgba(89,0,255,1);
+    box-shadow: 11px 10px 67px 50px rgba(89,0,255,1);
+}
+/* CSS PARA CLIENTES*/
+h3{
+text-align: center;
+color: #f00;
+}
+.eje1_cliente{
+    background-image: url(../imga/eje1_cliente.png);
+}
+.eje2_cliente{
+    background-image: url(../imga/eje2_cliente.png);
+
+}
+
+.eje3_cliente{
+    background-image: url(../imga/eje3_cliente.png);
+    height: 1180px;
+}
+.eje4_cliente{
+    background-image: url(../imga/eje4_cliente.png);
+    height: 1100px;
+}
+.logo_cliente{
+    background-image: url(../imga/logo_cliente.jpg);
+    height: 500px;
+}
+/*CSS PARA DARK MODE*/
+.dark-modo{
+    background-color: #000;
+}
+.dark-modo img{
+    filter: invert(100%);
+}
+.dark-modo .opinion h3{
+   color: #f00;
+}
+.dark-modo p{
+    color: #ffc107;
+}
+.dark-modo h1, h3{
+    color: var(--blanco);
+}
+.dark-modo h2{
+    color: var(--primario);
+}
+.dark-modo main{
+    background-color: #000;
+}
+.dark-modo .opinion{
+    color: #fff;
+}
+
+
+.derecha{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1rem;
+}
+.dark-mode{
+    width: 3rem;
+}
+.dark-mode:hover{
+    cursor: pointer;
+}
+/*metodo hamburquesa*/
+.mobile-menu{
+    text-align: center;
+}
+.mobile-menu img{
+width: 5rem;
+}
+.mobile-menu img:hover{
+    cursor: pointer;
+}
+@media (max-width:780px){
+    .nav-principal{
+        display: none;
+    }
+    .mobile-menu{
+        text-align: center;
+    }
+
+    .mobile-menu img{
+        width: 5rem;
+        height: 5rem;
+    }
+}
+
+@media(min-width:780px){
+
+    .nav-principal{
+        flex-direction: row;
+    }
+
+    .mobile-menu{
+        display: none;
+    }
+}
+@media(max-width: 780px){
+    .mostrar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media(min-width:780px){
+    .nav-principal{
+        flex-direction: row;
+    }
+}
+
+

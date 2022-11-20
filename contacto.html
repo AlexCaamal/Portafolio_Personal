@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingeniero en Sistemas</title>
+
+    <!--  NORMALIZE https://necolas.github.io/normalize.css/-->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <!--PARA LIGAR EL ARCHIVO EXTERNO  CSS EN TODAS LAS PAGINAS QUE SE USARAN-->
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap" rel="stylesheet">
+    <!-- FORMA NO RECOMENDADA DE USAR CSS
+    <style>
+        h1{
+            text-align: center;
+            color: brown;
+            text-transform: uppercase;
+        }
+    </style> -->
+
+    <!--PARA DAR PERFORMACE Y SE CARGUE ANTES EN TODAS LAS PAGINAS QUE SE USARAN-->
+    <link rel="preload" href="css/styles.css" as="style">
+    <!--PARA LIGAR EL ARCHIVO EXTERNO  CSS EN TODAS LAS PAGINAS QUE SE USARAN-->
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+    <!-- INICIO DEL ENCABEZADO DEL SITIO-->
+    <header>
+        <h1 class="titulo">Nardin Alexander Chuc Caamal <span> Estudiante de ISC</span></h1>
+
+    </header> <!-- FIN... DEL ENCABEZADO DEL SITIO-->
+
+    <!--INICIO DEL ÁREA DE NAVEGACIÓN O MENUS-->
+    <div class="nav-bg contenedor">
+        <nav class="nav-principal">
+            <a href="#">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="#">Clientes</a>
+        </nav>
+        <!--FIN... DEL ÁREA DE NAVEGACIÓN O MENUS-->
+    </div>
+    <!--<img src="img/banner_freelancer2.jpg" alt="Servicios"> -->
+
+
+    <!-- para buscar iconos svg o vectores lo soportan todos los navegadores se usa https://tablericons.com/-->
+
+
+    <!--FIN... SECCION DE IMAGEN  Y DATOS DE  UBICACION Y OBJETIVO-->
+
+    <!-- INICIO DE LA INFORMACION PRINCIPAL main MIS SERVICOS-->
+    <main class="contenedor sombra">
+       
+        <!-- INICIO DEL FORMULARIO-->
+        <section id="Contacto" class="contenedor">
+
+            <h2>Contacto</h2>
+
+            <form class="formulario">
+                <fieldset>
+                    <legend>Llena todos los campos</legend>
+                    <div class="contenedor-campos">
+                        <div class="campo">
+                            <!--se usa div para agrupos cada campo-->
+                            <label for="Nombre">Nombre</label>
+                            <input class="input-campo" type="text" placeholder="Tus nombres " name="nombres">
+                        </div>
+                        <div class="campo">
+                            <label for="">Teléfono</label>
+                            <input class="input-campo" type="tel" placeholder="Tu teléfono 10 digitos" name="celular">
+                        </div>
+                        <div class="campo">
+                            <label for="">Correo</label>
+                            <input class="input-campo" type="email" placeholder="Tu E-mail" id="txtCorreo" name="email">
+                        </div>
+                        <div class="campo">
+                            <label for="">Mensaje</label>
+                            <textarea></textarea>
+                        </div>
+                    </div>
+                    <div>
+                        <input type="submit" value="Enviar" class="Boton width-sm-100" name="mensaje">
+                    </div>
+                </fieldset>
+            </form>
+
+        </section> <!-- FIN... DEL FORMULARIO-->
+    </main>
+    <footer>
+
+        <p>Todos los derechos reservados &copy; 2022, Nicolas</p>
+        <p>Uso Eduacativo</p>
+
+    </footer>
+</body>
+
+</html>

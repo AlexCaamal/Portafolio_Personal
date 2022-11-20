@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingeniero en Sistemas</title>
+
+    <!--  NORMALIZE https://necolas.github.io/normalize.css/-->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <!--PARA LIGAR EL ARCHIVO EXTERNO  CSS EN TODAS LAS PAGINAS QUE SE USARAN-->
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap" rel="stylesheet">
+    <!-- FORMA NO RECOMENDADA DE USAR CSS
+    <style>
+        h1{
+            text-align: center;
+            color: brown;
+            text-transform: uppercase;
+        }
+    </style> -->
+
+    <!--PARA DAR PERFORMACE Y SE CARGUE ANTES EN TODAS LAS PAGINAS QUE SE USARAN-->
+    <link rel="preload" href="css/styles.css" as="style">
+    <!--PARA LIGAR EL ARCHIVO EXTERNO  CSS EN TODAS LAS PAGINAS QUE SE USARAN-->
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+    
+    <!-- INICIO DEL ENCABEZADO DEL SITIO-->
+    <div class="derecha contenedor">
+        <img class="dark-mode" src="imga/dark-mode.svg" alt="Icono dark">
+    <!-- INICIO DEL ENCABEZADO DEL SITIO-->
+    <header>
+        <h1 class="titulo derecha">Nardin Alexander Chuc Caamal <span class="derecha"> Estudiante de ISC</span></h1>
+
+    </header> <!-- FIN... DEL ENCABEZADO DEL SITIO-->
+    </div>
+
+    <!--INICIO DEL ÁREA DE NAVEGACIÓN O MENUS-->
+    <div class="nav-bg contenedor">
+        <div class="mobile-menu">
+            <img class= "img_hambur" src="imga/barras.svg" alt="icono Menu Hamburquesa">
+        
+        </div>
+        <nav class="nav-principal">
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="clientes.html">Clientes</a>
+        </nav>
+        <!--FIN... DEL ÁREA DE NAVEGACIÓN O MENUS-->
+    </div>
+    <br><br>
+
+
+    <!-- para buscar iconos svg o vectores lo soportan todos los navegadores se usa https://tablericons.com/-->
+
+
+    <!--FIN... SECCION DE IMAGEN  Y DATOS DE  UBICACION Y OBJETIVO-->
+
+    <!-- INICIO DE LA INFORMACION PRINCIPAL main MIS SERVICOS-->
+    <main class="contenedor sombra">
+       
+        <!-- INICIO DEL FORMULARIO-->
+        <section id="Contacto" class="contenedor">
+
+            <h2>Contacto</h2>
+
+            <form action= "php/accesobd.php" method ="POST" class="formulario">
+                <fieldset>
+                    <legend>Llena todos los campos</legend>
+                    <div class="contenedor-campos">
+                        <div class="campo">
+                            <!--se usa div para agrupos cada campo-->
+                            <label for="Nombre">Nombre</label>
+                            <input class="input-campo" type="text" placeholder="Tus nombres " name="nombres">
+                        </div>
+                        <div class="campo">
+                            <label for="">Teléfono</label>
+                            <input class="input-campo" type="tel" placeholder="Tu teléfono 10 digitos" name="celular">
+                        </div>
+                        <div class="campo">
+                            <label for="">Correo</label>
+                            <input class="input-campo" type="email" placeholder="Tu E-mail"  name="email">
+                        </div>
+                        <div class="campo">
+                            <label for="">Mensaje</label>
+                            <textarea name="mensaje"></textarea>
+                        </div>
+                    </div>
+                    <div>
+                       <!--<input type="submit" value="Enviar" class="Boton width-sm-100" name="mensaje">*/--->
+                        <button type="submit" name="enviar" class="Boton width-sm-100">Enviar</button>
+                    </div>
+                </fieldset>
+            </form>
+
+        </section> <!-- FIN... DEL FORMULARIO-->
+    </main>
+    <br>
+    <footer>
+
+        <section class="contenedor sombra">
+            <h1>REDES SOCIALES</h1>
+           
+                <a href="https://www.facebook.com/nardin.chuc" class="social"><img src="imga/facebook.png" alt=""> </a>
+                <a href="https://www.youtube.com/channel/UCwPWtKKk-NQV2XolopkzIXw" class="social"><img src="imga/youtube.png" alt=""> </a>
+            
+        </section>
+
+    </footer>
+    <script src = "js/app.js"> </script>
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+/* ESTA ES UNA HOJA DE ESTILO*/
+:root {
+    --blanco: #fff;
+    --negro: #000;
+    --azul: #00f;
+    --verde: #0f0;
+    --rojo: #f00;
+}
+
+/* CSS DE HTML*/
+html {
+    /*  font-size: 80%;*/
+    font-size: 80%;
+    box-sizing: border-box;
+    scroll-snap-type: y mandatory;
+    background-image: linear-gradient(to top, var(--primario) 0%, var(--blanco) 80%);
+
+}
+
+/* CSS DE BODY */
+
+body {
+    font-family: 'Comic Neue', cursive;
+
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.titulo{
+    text-align: center;
+    background-color: #00f;
+    color: var(--blanco);
+    font-size: 2.8rem;
+}
+
+/* CSS del main e imagen*/
+
+.contenedor {
+    max-width: 130rem;
+    margin: 0 auto;
+}
+
+.sombra {
+    -webkit-box-shadow: 7px 2px 91px 29px rgba(71,10,201,1);
+    -moz-box-shadow: 7px 2px 91px 29px rgba(71,10,201,1);
+    box-shadow: 7px 2px 91px 29px rgba(71,10,201,1);
+    padding: 1.5rem;
+    border-radius: 2rem;
+}
+
+.imagen{
+    background-image: url(../img/facultad_inge.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1700px;
+    background-position: right;
+    position: relative;
+    display: block;
+    flex-direction: column;
+}
+
+/*@media para la configuracion de la resolucion de la pagina*/
+@media(max-width:800px){
+    .ingenierias p{
+        font-size: 3rem;
+        width: auto;
+    }
+    .definicion_nosotros{
+        font-size: 3rem;
+        color: #fff;
+    }
+    .imagen{
+        height: auto;
+    }
+}
+
+/*CSS descripcion*/
+
+.definicion_nosotros{
+    font-size: 4.5rem;
+    
+}
+.ingenierias p{
+    background-color: rgb(1,1,1,0.25);
+    color: #fff;
+    width: 1200px;
+    display: auto;
+    top: 2.5px; left:2.5fx;
+}
+
+/* CSS PARA EL FOOTER*/
+.footer{
+    background-color: rgba(10, 159, 245, 0.2);
+    height: 5rem;
+    font-size: 5rem;
+    text-align: center;
+}
+.footer a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: aqua;
+}
+.footer a:hover{
+    color: #f00;
+}
+
+.imagen_uac{
+    background-image: url(../img/logo_uac.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    background-position: center;
+    position: relative;
+    display: block;
+    flex-direction: column;
+    text-align: right;
+    border-radius: 2rem;
+}
+
+.boton{
+ text-decoration: none;
+ font-size: 2.2rem;
+ background-color: rgba(10, 159, 245, 0.2);
+ width: 1000px;
+ border-radius: 1rem;
+}
+
+.boton:hover{
+    color:var(--rojo)
+}
